@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.titleContainer}>
         <h1 className={styles.title}>Beetkar</h1>
         <span className={styles.proffesion}>
-          The beekeeper&aposs eyes into the hive
+          The beekeeper&apos;s eyes into the hive
         </span>
         <span className={styles.desc}>
           ჩვენ ვეხმარებით მეფუტკრეებს დაავადებების აღმოჩენაში სპეციალური
