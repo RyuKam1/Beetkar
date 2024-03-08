@@ -1,23 +1,23 @@
 .container {
-    min-width: 100px;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+  min-width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .container:hover {
-    background-color: #0e0e0e;
+  background-color: #fdfd62;
 }
 
 .active {
-    background-color: white;
-    color: black;
-    transition: 0.2s ease-in-out;
+  background-color: white;
+  color: black;
+  transition: 0.2s ease-in-out;
 }
 
 .active:hover {
-    background-color: #c4c4c4;
+  background-color: #c4c4c4;
 }

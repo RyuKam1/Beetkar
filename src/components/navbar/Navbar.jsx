@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import NavLink from "./navLink/NavLink";
+import Image from "next/image";
 
 function Navbar() {
   const links = [
@@ -24,42 +25,22 @@ function Navbar() {
     },
     {
       id: 4,
-      title: "Portfolio",
-      url: "/portfolio",
-    },
-    {
-      id: 5,
       title: "Contact",
       url: "/contact",
     },
   ];
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
 
   return (
     <div className={styles.container}>
-      <div
-        className={styles.logoContainer}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-      >
-        {isHovering && (
-          <Link href="/" className={styles.logo}>
-            გიორგი
-          </Link>
-        )}
-        {!isHovering && (
-          <Link href="/" className={styles.logo}>
-            Giorgi
-          </Link>
-        )}
+      <div className={styles.logoContainer}>
+        <div className={styles.logo}>
+          <Image
+            src={"/beetkarLogo.png"}
+            alt="beetkari"
+            fill={true}
+            className={styles.img}
+          ></Image>
+        </div>
       </div>
       <div className={styles.links}>
         {links.map((link) => (

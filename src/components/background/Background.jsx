@@ -30,7 +30,7 @@ function Background() {
 
   const options = useMemo(() => ({
     background: {
-      color: "transparent",
+      color: "#ffffff",
       repeat: "no-repeat",
       size: "40%",
       position: "60% 50%",
@@ -53,6 +53,7 @@ function Background() {
           duration: 2,
           opacity: 0,
           size: 3,
+          color: "#cc9c00",
           speed: 5,
         },
         repulse: {
@@ -62,7 +63,7 @@ function Background() {
       },
     },
     particles: {
-      color: { value: "#ffffff" },
+      color: { value: "#000000" },
       move: {
         direction: "none",
         enable: true,
@@ -81,7 +82,7 @@ function Background() {
           enable: true,
           speed: 5,
         },
-        value: { min: 0.3, max: 0.6 },
+        value: { min: 0.5, max: 1 },
       },
       shape: {
         type: "circle",

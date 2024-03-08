@@ -7,7 +7,6 @@ function InteractiveText() {
   const handleMouseOver = () => {
     setIsHovering(true);
   };
-
   const handleMouseOut = () => {
     setIsHovering(false);
   };
@@ -20,12 +19,12 @@ function InteractiveText() {
     >
       {isHovering && (
         <h1 href="/" className={styles.name}>
-          გიორგი
+          ბითკარი
         </h1>
       )}
       {!isHovering && (
         <h1 href="/" className={styles.name}>
-          Giorgi
+          Beetkar
         </h1>
       )}
     </div>
