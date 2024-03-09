@@ -7,6 +7,7 @@ export async function checkout({lineItems}){
         if(!stripePromise){
             stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_API_KEY}`)
         }
+        console.log(stripePromise);
         return stripePromise
     }
 
