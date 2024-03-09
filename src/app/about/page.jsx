@@ -39,9 +39,6 @@ function About() {
             პროებლემის მოგვარებაზე. Აი ასე დაიბადა Beetkar-ის იდეაა
           </p>
         </div>
-        {/* id="css"
-            value="81" 62 57 74 37
-            max="100" */}
         <div className={styles.skillContainer}>
           <Image
             src={"/progressImg.jpg"}
