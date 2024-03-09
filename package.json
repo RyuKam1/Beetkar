@@ -26,7 +26,8 @@
     "react-reveal": "^1.2.2",
     "react-spring": "^9.7.3",
     "react-tsparticles": "^2.12.2",
-    "react-typed": "^1.2.0"
+    "react-typed": "^1.2.0",
+    "stripe": "^14.20.0"
   },
   "devDependencies": {
     "eslint": "^8",

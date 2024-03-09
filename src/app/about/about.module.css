@@ -140,34 +140,6 @@
   background-color: #fbff00;
 }
 
-.exp_eduContainer {
-  display: flex;
-  margin: 0 30vh;
-}
-
-.education,
-.experience {
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 30px;
-}
-
-.educationTitle,
-.experienceTitle {
-  font-size: 24px;
-  margin-bottom: 30px;
-  font-weight: 700;
-  color: white;
-}
-.row {
-  margin: 50px;
-}
-
-.timelineBox {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
 .timeline {
   padding: 30px 15px;
   border: 1px solid rgb(0, 0, 0);
