@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap");
 
+.mainContainer {
+  margin: 0 15%;
+}
+
 .aboutContainer {
   position: relative;
   width: 680px;
@@ -11,6 +15,7 @@
 .team,
 .aboutContainer,
 .infoContainerContainer,
+.beetkariContainer,
 .skillContainer,
 .exp_eduContainer {
   position: relative;
@@ -24,7 +29,6 @@
 
 .container {
   display: flex;
-  margin: 0 30vh;
   justify-content: space-between;
 }
 
@@ -206,7 +210,7 @@
 }
 
 .team {
-  margin: 200px 30vh;
+  margin-top: 200px;
 }
 
 .membersContainer {
@@ -221,17 +225,30 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 200px;
   grid-row-gap: 100px;
+  margin-bottom: 80px;
 }
 
 .member {
   height: 600px;
   width: 450px;
-  background-color: #fbff00;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   border-radius: 4%;
+  -webkit-box-shadow: 1px 2px 22px 3px rgba(84, 74, 0, 0.71);
+  box-shadow: 1px 2px 22px 3px rgba(84, 74, 0, 0.71);
+
+  background: rgb(255, 241, 194);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 241, 194, 1) 0%,
+    rgba(226, 255, 0, 1) 100%
+  );
+}
+
+.nameContainer {
+  font-size: 25px;
 }
 
 .imgContainer {
@@ -249,8 +266,85 @@
 
 .memberImg {
   object-fit: cover;
+  border-radius: 5%;
 }
 
 .nameContainer {
   margin-bottom: 60px;
+}
+
+.beetkariContainer {
+  margin-top: 60px;
+}
+
+.beetkariPreviewContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.beetkariImgContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.beetkarInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.irInfoContainer {
+  display: flex;
+  width: 600px;
+  max-width: 650px;
+  min-width: 400px;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.irDescContainer {
+  margin-top: 15px;
+}
+
+.counterInfoContainer {
+  display: flex;
+  width: 600px;
+  max-width: 650px;
+  min-width: 400px;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.counterDescContainer {
+  margin-top: 15px;
+}
+
+.sensorInfoContainer {
+  display: flex;
+  width: 600px;
+  max-width: 650px;
+  min-width: 400px;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.sensorDescContainer {
+  margin-top: 15px;
+}
+
+.heaterInfoContainer {
+  display: flex;
+  width: 600px;
+  max-width: 650px;
+  min-width: 400px;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.heaterDescContainer {
+  margin-top: 15px;
+}
+
+#beetInfo {
+  margin-right: 50px;
 }

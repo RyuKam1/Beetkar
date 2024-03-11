@@ -72,6 +72,108 @@ function About() {
           <button className={styles.btn}>წინასწარი შეკვეთა</button>
         </div>
       </div>
+      <div className={styles.beetkariContainer}>
+        <div className={styles.beetkari}>
+          <div className={styles.titleContainer}>
+            <h1 className={styles.title}>Beetkari</h1>
+          </div>
+        </div>
+        <div className={styles.beetkariPreviewContainer}>
+          <video width="1280" height="700" autoPlay loop muted>
+            <source src="/beetkari360.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div className={styles.beetkarInfoContainer}>
+          <div className={styles.irInfoContainer}>
+            <div className={styles.irTitleContainer}>
+              <h1 className={styles.irTitle}>IR Technology</h1>
+              <div className={styles.irDescContainer}>
+                <p className={styles.irDesc}>
+                  Beetkar uses IR Technology <br />
+                  to detect varroa mites
+                </p>
+              </div>
+            </div>
+            <div className={styles.beetkariImgContainer}>
+              <Image
+                src={"/irBee.jpg"}
+                alt="BeeIRFootage"
+                fill={true}
+                className={styles.img}
+              ></Image>
+            </div>
+          </div>
+
+          <div className={styles.counterInfoContainer}>
+            <div className={styles.counterTitleContainer}>
+              <h1 className={styles.counterTitle}>Bee Counter</h1>
+              <div className={styles.counterDescContainer}>
+                <p className={styles.counterDesc}>
+                  Beetkar uses AI Technology <br />
+                  to get estimated number of amount of <br />
+                  bees in the hive
+                </p>
+              </div>
+            </div>
+            <div className={styles.beetkariImgContainer}>
+              <Image
+                src={"/irBee.jpg"}
+                alt="BeeIRFootage"
+                fill={true}
+                className={styles.img}
+              ></Image>
+            </div>
+          </div>
+
+          <div className={styles.sensorInfoContainer}>
+            <div className={styles.sensorTitleContainer}>
+              <h1 className={styles.sensorTitle}>
+                High-Tech <br />
+                Sensors
+              </h1>
+              <div className={styles.sensorDescContainer}>
+                <p className={styles.sensorDesc}>
+                  Beetkar uses various <br />
+                  high-tech sensors <br />
+                  to get information about <br />
+                  temperature and humidity <br />
+                  in the hive
+                </p>
+              </div>
+            </div>
+            <div className={styles.beetkariImgContainer}>
+              <Image
+                src={"/irBee.jpg"}
+                alt="BeeIRFootage"
+                fill={true}
+                className={styles.img}
+              ></Image>
+            </div>
+          </div>
+
+          <div className={styles.heaterInfoContainer}>
+            <div className={styles.heaterTitleContainer}>
+              <h1 className={styles.heaterTitle}>Temperature Control</h1>
+              <div className={styles.heaterDescContainer}>
+                <p className={styles.heaterDesc}>
+                  Beetkar can make sure that <br />
+                  temperature is kept safe <br />
+                  for bees in the hive <br />
+                </p>
+              </div>
+            </div>
+            <div className={styles.beetkariImgContainer}>
+              <Image
+                src={"/irBee.jpg"}
+                alt="BeeIRFootage"
+                fill={true}
+                className={styles.img}
+              ></Image>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.team}>
         <div className={styles.titleContainer}>
           <h1 className={styles.title}>ჩვენი გუნდი</h1>
@@ -89,55 +191,69 @@ function About() {
             <div className={styles.member}>
               <div className={styles.memberImgContainer}>
                 <Image
-                  src={"/profile.png"}
-                  alt="beetkari"
-                  fill={true}
-                  className={styles.memberImg}
-                ></Image>
-              </div>
-              <div className={styles.nameContainer}>Giorgi Omarashvili</div>
-              <div className={styles.descContainer}>mechanik</div>
-            </div>
-
-            <div className={styles.member}>
-              <div className={styles.memberImgContainer}>
-                <Image
-                  src={"/profile.png"}
-                  alt="beetkari"
-                  fill={true}
-                  className={styles.memberImg}
-                ></Image>
-              </div>
-              <div className={styles.nameContainer}>Gary Kinkladze</div>
-              <div className={styles.descContainer}>mechanik</div>
-            </div>
-
-            <div className={styles.member}>
-              <div className={styles.memberImgContainer}>
-                <Image
-                  src={"/profile.png"}
+                  src={"/giorgi.jpg"}
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
                 ></Image>
               </div>
               <div className={styles.nameContainer}>
-                Aleqsandre Gaganashvili
+                <h3>Giorgi Omarashvili</h3>
               </div>
-              <div className={styles.descContainer}>mechanik</div>
+              <div className={styles.descContainer}>
+                <p>mechanik</p>
+              </div>
             </div>
 
             <div className={styles.member}>
               <div className={styles.memberImgContainer}>
                 <Image
-                  src={"/profile.png"}
+                  src={"/gary.jpg"}
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
                 ></Image>
               </div>
-              <div className={styles.nameContainer}>Nikoloz Albutashvili</div>
-              <div className={styles.descContainer}>mechanik</div>
+              <div className={styles.nameContainer}>
+                <h3>Gary Kinkladze</h3>
+              </div>
+              <div className={styles.descContainer}>
+                <p>mechanik</p>
+              </div>
+            </div>
+
+            <div className={styles.member}>
+              <div className={styles.memberImgContainer}>
+                <Image
+                  src={"/aleqsandre.jpg"}
+                  alt="beetkari"
+                  fill={true}
+                  className={styles.memberImg}
+                ></Image>
+              </div>
+              <div className={styles.nameContainer}>
+                <h3>Aleksandre Gaganashvili</h3>
+              </div>
+              <div className={styles.descContainer}>
+                <p>mechanik</p>
+              </div>
+            </div>
+
+            <div className={styles.member}>
+              <div className={styles.memberImgContainer}>
+                <Image
+                  src={"/albuta.jpg"}
+                  alt="beetkari"
+                  fill={true}
+                  className={styles.memberImg}
+                ></Image>
+              </div>
+              <div className={styles.nameContainer}>
+                <h3>Nikoloz Albutashvili</h3>
+              </div>
+              <div className={styles.descContainer}>
+                <p>mechanik</p>
+              </div>
             </div>
           </div>
         </div>

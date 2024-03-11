@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding: 6rem 0rem;
   min-height: 100vh;
-  margin: 0 30vh;
+  margin: 0 15%;
 }
 
 .titleContainer,
@@ -63,6 +63,8 @@
   height: 550px;
   position: relative;
   transition: ease 0.5s;
+  min-width: 500px;
+  left: 5%;
 }
 
 .img {
@@ -135,6 +137,7 @@
   font-weight: 550;
   transition: all 0.3s;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .btn:hover {
