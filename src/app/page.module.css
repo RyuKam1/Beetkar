@@ -1,16 +1,19 @@
 .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 6rem 0rem;
   min-height: 100vh;
   margin: 0 15%;
+  flex-wrap: wrap;
 }
 
 .titleContainer,
 .imageContainer {
   position: relative;
   z-index: 1;
+  width: 45%;
+  margin-bottom: 2rem;
 }
 
 .titleContainer {
@@ -63,7 +66,7 @@
   height: 550px;
   position: relative;
   transition: ease 0.5s;
-  min-width: 500px;
+  min-width: 300px;
   left: 5%;
 }
 

@@ -219,13 +219,20 @@
 }
 
 .members {
-  margin-top: 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 200px;
   grid-row-gap: 100px;
   margin-bottom: 80px;
+
+  /* Adjust the grid layout for smaller screens */
+  @media screen and (max-width: 1120px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+  }
 }
 
 .member {
@@ -347,4 +354,137 @@
 
 #beetInfo {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    margin: 0 5%;
+  }
+}
+
+.aboutContainer {
+  position: relative;
+  width: 680px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 80px;
+  font-size: 85px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+.storyText {
+  line-height: 32px;
+  letter-spacing: 0.003em;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .storyText {
+    font-size: 18px;
+  }
+}
+
+.but {
+  width: 588px;
+  line-height: 40px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -0.009em;
+  background-color: rgb(14, 14, 14);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .but {
+    width: 100%;
+  }
+}
+
+.skillContainer {
+  position: relative;
+  width: 540px;
+  height: 540px;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .skillContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 2%;
+  box-shadow: 0 0 10px black;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.skillContainer p {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 5px;
+  width: 500px;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .skillContainer p {
+    width: 100%;
+  }
+}
+
+.infoContainer {
+  /* Center the container horizontally on the page */
+  margin: 0 auto;
+  /* Use a grid layout with 2 columns and 4 rows */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* Add some space between grid cells */
+  grid-gap: 20px;
+  /* Center the grid cells vertically and horizontally */
+  align-items: center;
+  justify-items: center;
+
+  /* Adjust the grid layout for smaller screens */
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+  }
 }
