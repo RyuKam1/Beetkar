@@ -160,3 +160,36 @@
   background: teal;
   z-index: 2;
 }
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 45px;
+    margin: none;
+  }
+  .proffesion {
+    font-size: 25px;
+  }
+  .desc {
+    font-size: 15px;
+  }
+  .titleContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .btnContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1298px) {
+  .imageContainer {
+    margin-top: 100px;
+    right: 50%;
+  }
+  .titleContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

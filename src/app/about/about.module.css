@@ -66,6 +66,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  left: 5%;
+  max-height: 440px;
 }
 
 .img {
@@ -336,6 +338,23 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 500px) {
+  .sensorInfoContainer,
+  .heaterInfoContainer,
+  .irInfoContainer,
+  .counterInfoContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .irDescContainer,
+  .counterDescContainer,
+  .heaterDescContainer,
+  .sensorDescContainer {
+    margin-bottom: 20px;
+  }
+}
+
 .sensorDescContainer {
   margin-top: 15px;
 }
@@ -355,12 +374,6 @@
 
 #beetInfo {
   margin-right: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  .mainContainer {
-    margin: 0 5%;
-  }
 }
 
 .aboutContainer {
@@ -430,27 +443,10 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
-  .skillContainer {
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-  }
-}
-
 .img {
   object-fit: cover;
   border-radius: 2%;
   box-shadow: 0 0 10px black;
-  width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .skillContainer p {
@@ -470,6 +466,33 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .skillContainer {
+    margin-left: -15%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .skillContainer {
+    margin-left: -20%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .container {
+    flex-direction: column;
+  }
+  .skillContainer {
+    margin-bottom: 100px;
+    max-height: 900px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .info {
+    width: 210px;
+  }
+}
+
 .infoContainer {
   /* Center the container horizontally on the page */
   margin: 0 auto;
@@ -484,7 +507,7 @@
   justify-items: center;
 
   /* Adjust the grid layout for smaller screens */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 870px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
   }
