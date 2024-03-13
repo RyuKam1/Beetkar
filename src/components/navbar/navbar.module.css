@@ -8,7 +8,7 @@
 
   border-style: solid;
   border-top: 0;
-  border-bottom: 2;
+  border-bottom: 2px;
   border-left: 0;
   border-right: 0;
   border-color: #ffd900;
@@ -40,4 +40,23 @@
 .img {
   object-fit: contain;
   position: relative;
+  max-height: 90px;
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    flex-direction: column;
+    padding: 0 15px;
+    height: auto;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoContainer {
+    width: 100%;
+    text-align: center;
+  }
 }

@@ -225,6 +225,7 @@
   grid-column-gap: 200px;
   grid-row-gap: 100px;
   margin-bottom: 80px;
+  margin-top: 100px;
 
   /* Adjust the grid layout for smaller screens */
   @media screen and (max-width: 1120px) {

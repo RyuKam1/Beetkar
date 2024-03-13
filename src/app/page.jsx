@@ -7,8 +7,15 @@ import Background from "@/components/background/Background";
 import InteractiveText from "@/components/interactiveText/interactiveText";
 import { getElement } from "@syncfusion/ej2-react-progressbar";
 import { checkout } from "../../checkout";
+import OrderWindow from "@/components/order/OrderWindow";
 
 export default function Home() {
+  const [showMe, setShowMe] = useState(false);
+  function toggle() {
+    setShowMe(!showMe);
+    console.log(showMe);
+  }
+
   return (
     <main className={styles.main}>
       <Background></Background>
@@ -25,19 +32,7 @@ export default function Home() {
           <button className={styles.btn}>
             <a href="/about">ჩვენს შესახებ</a>
           </button>
-          <button
-            className={styles.btn}
-            onClick={() => {
-              checkout({
-                lineItems: [
-                  {
-                    price: "price_1OsAfv02or1JoRIUq8ygGRx5",
-                    quantity: 1,
-                  },
-                ],
-              });
-            }}
-          >
+          <button className={styles.btn} onClick={toggle}>
             წინასწარი შეკვეთა
           </button>
         </div>
@@ -50,6 +45,7 @@ export default function Home() {
           className={styles.img}
         ></Image>
       </div>
+      {showMe ? <OrderWindow /> : null}
     </main>
   );
 }

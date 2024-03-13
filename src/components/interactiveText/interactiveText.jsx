@@ -19,12 +19,12 @@ function InteractiveText() {
     >
       {isHovering && (
         <h1 href="/" className={styles.name}>
-          ბითკარი
+          გიორგი
         </h1>
       )}
       {!isHovering && (
         <h1 href="/" className={styles.name}>
-          Beetkar
+          Giorgi
         </h1>
       )}
     </div>
