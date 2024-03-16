@@ -2,14 +2,26 @@
 
 import React, { useState } from "react";
 import styles from "./orderWindow.module.css";
+import { Resend } from "resend";
 
 function OrderWindow() {
-  const price = 69; //price of the pizza in USD,
+  const price = 380; //price of the pizza in USD,
 
   const [numInput, setNumInput] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [phoneInput, setPhoneInput] = useState("");
+
+  const resend = new Resend("re_WMGSNjMy_4qWkYdBdiD4BoWnm9SK2JZu6");
+
+  function handleOrder() {
+    resend.emails.send({
+      from: "Beetkar <beetkar.online>",
+      to: "omarashvili.giorgi07@gmail.com",
+      subject: "Hello World",
+      html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
+    });
+  }
 
   return (
     <div className={styles.mainContainer}>
@@ -45,7 +57,9 @@ function OrderWindow() {
             />
           </form>
           <a href="/thanks">
-            <button className={styles.btn}>შეკვეთა {price * numInput}₾</button>
+            <button className={styles.btn} onClick={handleOrder}>
+              შეკვეთა {price * numInput}₾
+            </button>
           </a>
         </div>
       </div>
