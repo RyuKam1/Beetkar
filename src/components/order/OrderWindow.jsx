@@ -16,7 +16,7 @@ function OrderWindow() {
 
   function handleOrder() {
     resend.emails.send({
-      from: "Beetkar <beetkar.online>",
+      from: "Beetkar <beetkar@beetkar.online>",
       to: "omarashvili.giorgi07@gmail.com",
       subject: "Hello World",
       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
