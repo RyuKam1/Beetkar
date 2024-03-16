@@ -12,9 +12,8 @@ function OrderWindow() {
   const [emailInput, setEmailInput] = useState("");
   const [phoneInput, setPhoneInput] = useState("");
 
-  const resend = new Resend("re_WMGSNjMy_4qWkYdBdiD4BoWnm9SK2JZu6");
-
   function handleOrder() {
+    const resend = new Resend("re_WMGSNjMy_4qWkYdBdiD4BoWnm9SK2JZu6");
     resend.emails.send({
       from: "Beetkar <beetkar@beetkar.online>",
       to: "omarashvili.giorgi07@gmail.com",
