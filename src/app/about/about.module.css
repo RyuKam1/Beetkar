@@ -512,3 +512,7 @@
     grid-template-rows: repeat(8, 1fr);
   }
 }
+
+.descContainer {
+  line-height: 30px;
+}

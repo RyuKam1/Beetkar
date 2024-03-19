@@ -210,7 +210,11 @@ function About() {
                 <h3>Giorgi Omarashvili</h3>
               </div>
               <div className={styles.descContainer}>
-                <p>mechanik</p>
+                <p>
+                  ● Web-Developer <br />
+                  ● Hardware Developer <br />
+                  ● App Developer <br />
+                </p>
               </div>
             </div>
 
@@ -227,7 +231,10 @@ function About() {
                 <h3>Gary Kinkladze</h3>
               </div>
               <div className={styles.descContainer}>
-                <p>mechanik</p>
+                <p>
+                  ● 3D Designer <br />
+                  ● Social Media Manager <br />
+                </p>
               </div>
             </div>
 
@@ -244,7 +251,11 @@ function About() {
                 <h3>Aleksandre Gaganashvili</h3>
               </div>
               <div className={styles.descContainer}>
-                <p>mechanik</p>
+                <p>
+                  ● Hardware Developer <br />
+                  ● Graphic Designer <br />
+                  ● Web-Developer <br />
+                </p>
               </div>
             </div>
 
@@ -261,7 +272,10 @@ function About() {
                 <h3>Nikoloz Albutashvili</h3>
               </div>
               <div className={styles.descContainer}>
-                <p>mechanik</p>
+                <p>
+                  ● UI/UX Designer <br />
+                  ● 3D Designer <br />
+                </p>
               </div>
             </div>
           </div>
