@@ -29,12 +29,14 @@ function Navbar() {
     <div className={styles.container}>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
-          <Image
-            src={"/beetkarLogo.png"}
-            alt="beetkari"
-            fill={true}
-            className={styles.img}
-          ></Image>
+          <a href="/">
+            <Image
+              src={"/beetkarLogo.png"}
+              alt="beetkari"
+              fill={true}
+              className={styles.img}
+            ></Image>
+          </a>
         </div>
       </div>
       <div className={styles.links}>

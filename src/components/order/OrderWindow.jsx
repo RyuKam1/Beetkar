@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./orderWindow.module.css";
-import { Resend } from "resend";
+import { useRouter } from "next/navigation";
 
 function OrderWindow() {
   const price = 380; //price of the pizza in USD,
@@ -12,14 +12,17 @@ function OrderWindow() {
   const [emailInput, setEmailInput] = useState("");
   const [phoneInput, setPhoneInput] = useState("");
 
+  const router = useRouter();
+
   function handleOrder() {
-    const resend = new Resend("re_WMGSNjMy_4qWkYdBdiD4BoWnm9SK2JZu6");
-    resend.emails.send({
-      from: "Beetkar <beetkar@beetkar.online>",
-      to: "omarashvili.giorgi07@gmail.com",
-      subject: "Hello World",
-      html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
-    });
+    const queryParams = {
+      name: nameInput,
+      email: emailInput,
+      phone: phoneInput,
+      amount: numInput,
+    };
+    const queryString = new URLSearchParams(queryParams).toString();
+    router.push(`/thanks?${queryString}`);
   }
 
   return (
@@ -55,11 +58,9 @@ function OrderWindow() {
               onChange={(event) => setNumInput(event.target.value)}
             />
           </form>
-          <a href="/thanks">
-            <button className={styles.btn} onClick={handleOrder}>
-              შეკვეთა {price * numInput}₾
-            </button>
-          </a>
+          <button className={styles.btn} onClick={handleOrder}>
+            შეკვეთა {price * numInput}₾
+          </button>
         </div>
       </div>
     </div>
