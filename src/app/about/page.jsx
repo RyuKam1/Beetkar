@@ -6,8 +6,14 @@ import ProgressBar from "@/components/progressBar/ProgressBar";
 import CountUp from "react-countup";
 import Background from "@/components/background/Background";
 import Image from "next/image";
+import OrderWindow from "@/components/order/OrderWindow";
 
 function About() {
+  const [showMe, setShowMe] = useState(false);
+  function toggle() {
+    setShowMe(!showMe);
+    console.log(showMe);
+  }
   return (
     <div className={styles.mainContainer}>
       <Background></Background>
@@ -69,8 +75,11 @@ function About() {
           </div>
         </div>
         <div className={styles.btnContainer}>
-          <button className={styles.btn}>წინასწარი შეკვეთა</button>
+          <button className={styles.btn} onClick={toggle}>
+            წინასწარი შეკვეთა
+          </button>
         </div>
+        {showMe ? <OrderWindow /> : null}
       </div>
       <div className={styles.beetkariContainer}>
         <div className={styles.beetkari}>
