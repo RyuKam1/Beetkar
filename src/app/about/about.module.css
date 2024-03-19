@@ -516,3 +516,9 @@
 .descContainer {
   line-height: 30px;
 }
+
+.orderWindow {
+  position: absolute;
+  left: 19%;
+  top: -50%;
+}

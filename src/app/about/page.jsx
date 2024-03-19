@@ -79,7 +79,9 @@ function About() {
             წინასწარი შეკვეთა
           </button>
         </div>
-        {showMe ? <OrderWindow /> : null}
+        <div className={styles.orderWindow}>
+          {showMe ? <OrderWindow></OrderWindow> : null}
+        </div>
       </div>
       <div className={styles.beetkariContainer}>
         <div className={styles.beetkari}>
