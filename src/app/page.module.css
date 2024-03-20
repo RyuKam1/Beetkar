@@ -58,6 +58,7 @@
   padding-bottom: 20px;
   font-size: 20px;
   max-width: 80%;
+  min-width: 100px;
   border-top: dotted rgb(0, 0, 0);
 }
 
@@ -67,7 +68,7 @@
   position: relative;
   transition: ease 0.5s;
   min-width: 300px;
-  left: 5%;
+  left: 15%;
 }
 
 .img {
@@ -161,6 +162,101 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 1313px) {
+  .imageContainer {
+    right: 50%;
+    left: 10%;
+  }
+  .main {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .imageContainer {
+    right: 50%;
+    left: 5%;
+  }
+  .main {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .imageContainer {
+    margin: 100px 0px;
+    left: 0%;
+    width: 700px;
+  }
+  .imageContainer::before {
+    right: 660px;
+    bottom: 500px;
+  }
+  .imageContainer:hover::before {
+    right: 680px;
+    bottom: 520px;
+  }
+  .titleContainer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main {
+    margin: 0 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .imageContainer {
+    width: 600px;
+  }
+  .imageContainer::before {
+    right: 560px;
+    bottom: 500px;
+  }
+  .imageContainer:hover::before {
+    right: 580px;
+    bottom: 520px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .imageContainer {
+    width: 500px;
+  }
+  .imageContainer::before {
+    right: 460px;
+    bottom: 500px;
+  }
+  .imageContainer:hover::before {
+    right: 480px;
+    bottom: 520px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageContainer {
+    width: 450px;
+  }
+  .imageContainer::before {
+    right: 410px;
+    bottom: 500px;
+  }
+  .imageContainer:hover::before {
+    right: 440px;
+    bottom: 520px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    margin: 0 0%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .title {
     font-size: 45px;
@@ -180,16 +276,50 @@
   .btnContainer {
     flex-direction: column;
   }
+  .imageContainer {
+    width: 400px;
+    height: 450px;
+    margin-top: 50px;
+  }
+  .imageContainer::before {
+    right: 350px;
+    bottom: 400px;
+  }
+  .imageContainer:hover::before {
+    right: 360px;
+    bottom: 420px;
+  }
 }
 
-@media screen and (max-width: 1298px) {
+@media screen and (max-width: 450px) {
   .imageContainer {
-    margin-top: 100px;
-    right: 50%;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
   }
-  .titleContainer {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .imageContainer::before {
+    right: 250px;
+    bottom: 350px;
+  }
+  .imageContainer:hover::before {
+    right: 260px;
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .imageContainer {
+    width: 200px;
+    height: 300px;
+    margin-top: 50px;
+    min-width: 50px;
+  }
+  .imageContainer::before {
+    right: 150px;
+    bottom: 250px;
+  }
+  .imageContainer:hover::before {
+    right: 160px;
+    bottom: 250px;
   }
 }
