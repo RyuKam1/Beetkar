@@ -15,14 +15,23 @@ function OrderWindow() {
   const router = useRouter();
 
   function handleOrder() {
-    const queryParams = {
-      name: nameInput,
-      email: emailInput,
-      phone: phoneInput,
-      amount: numInput,
-    };
-    const queryString = new URLSearchParams(queryParams).toString();
-    router.push(`/thanks?${queryString}`);
+    if (
+      nameInput != "" &&
+      emailInput != "" &&
+      phoneInput != "" &&
+      numInput != ""
+    ) {
+      const queryParams = {
+        name: nameInput,
+        email: emailInput,
+        phone: phoneInput,
+        amount: numInput,
+      };
+      const queryString = new URLSearchParams(queryParams).toString();
+      router.push(`/thanks?${queryString}`);
+    } else {
+      alert("please fill all the fields");
+    }
   }
 
   return (
@@ -40,14 +49,14 @@ function OrderWindow() {
               onChange={(event) => setNameInput(event.target.value)}
             />
             <input
-              type="text"
+              type="email"
               placeholder="Email"
               className={styles.textInput}
               onChange={(event) => setEmailInput(event.target.value)}
             />
             <input
-              type="text"
-              placeholder="Phone Number (optional)"
+              type="tel"
+              placeholder="Phone Number"
               className={styles.textInput}
               onChange={(event) => setPhoneInput(event.target.value)}
             />

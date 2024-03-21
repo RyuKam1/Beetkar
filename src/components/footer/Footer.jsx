@@ -8,13 +8,15 @@ function Footer() {
       <div className={styles.container}>
         <div className={styles.footerText}>@all rights reserved</div>
         <div className={styles.socialNetworks}>
-          <Image
-            src="/1.png"
-            className={styles.icon}
-            width={20}
-            height={20}
-            alt="facebook"
-          />
+          <a href="https://www.facebook.com/beetkar" target="_blank">
+            <Image
+              src="/1.png"
+              className={styles.icon}
+              width={20}
+              height={20}
+              alt="facebook"
+            />
+          </a>
           <Image
             src="/2.png"
             className={styles.icon}

@@ -435,6 +435,12 @@
   letter-spacing: 2px;
 }
 
+.orderWindow {
+  position: absolute;
+  left: 19%;
+  top: -50%;
+}
+
 @media screen and (max-width: 1300px) {
   .mainContainer {
     margin: 0 10%;
@@ -442,11 +448,35 @@
   .skillContainer {
     left: 7%;
   }
+  .orderWindow {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .orderWindow {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .orderWindow {
+    left: 1%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .skillContainer p {
     width: 100%;
+  }
+  .orderWindow {
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .orderWindow {
+    left: -10%;
   }
 }
 
@@ -454,10 +484,51 @@
   .skillContainer {
     margin-left: -15%;
   }
+  .orderWindow {
+    left: -15%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .orderWindow {
+    left: -20%;
+  }
 }
 @media screen and (max-width: 565px) {
   .skillContainer {
     margin-left: -20%;
+  }
+  .orderWindow {
+    left: -30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .orderWindow {
+    left: -40%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .orderWindow {
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .orderWindow {
+    left: -60%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .orderWindow {
+    left: -100%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .orderWindow {
+    left: -120%;
   }
 }
 
@@ -509,10 +580,4 @@
 
 .descContainer {
   line-height: 30px;
-}
-
-.orderWindow {
-  position: absolute;
-  left: 19%;
-  top: -50%;
 }
