@@ -7,16 +7,17 @@ import { Resend } from "resend";
 const page = async ({ params, searchParams }) => {
   const apiKey = "re_S4yxyywk_B1YS5ufQQpLLdDMW8rgEarMP";
   const resend = new Resend(apiKey);
+  const price = 1600; //price of the pizza in USD,
 
   console.log(searchParams);
 
   try {
     const response = await resend.emails.send({
       from: "Beetkar <beetkar@beetkar.online>",
-      to: "omarashvili.giorgi07@gmail.com",
+      to: "beetk4r@gmail.com",
       subject: "New Order!",
       name: "Beetkar",
-      html: `<h1>New Order!</h1><p>Name: ${searchParams.name} <br/> Email: ${searchParams.email} <br/> Phone: ${searchParams.phone} <br/> Amount: ${searchParams.amount} <br/></p>`,
+      html: `<h1>New Order!</h1><p>Name: ${searchParams.name} <br/> Email: ${searchParams.email} <br/> Phone: ${searchParams.phone} <br/> Amount: ${searchParams.amount}(${price * searchParams.amount}₾) <br/></p>`,
     });
 
     console.log("Email sent successfully:", response);
