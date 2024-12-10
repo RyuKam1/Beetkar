@@ -130,7 +130,7 @@ function About() {
             <div className={styles.beetkariImgContainer}>
               <Image
                 src={"/irBee.jpg"}
-                alt="BeeIRFootage"
+                alt="BeeCounter"
                 fill={true}
                 className={styles.img}
               ></Image>
@@ -156,7 +156,7 @@ function About() {
             <div className={styles.beetkariImgContainer}>
               <Image
                 src={"/irBee.jpg"}
-                alt="BeeIRFootage"
+                alt="BeeSensors"
                 fill={true}
                 className={styles.img}
               ></Image>
@@ -177,7 +177,7 @@ function About() {
             <div className={styles.beetkariImgContainer}>
               <Image
                 src={"/irBee.jpg"}
-                alt="BeeIRFootage"
+                alt="BeeTemperature"
                 fill={true}
                 className={styles.img}
               ></Image>

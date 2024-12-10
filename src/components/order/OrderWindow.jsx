@@ -5,7 +5,7 @@ import styles from "./orderWindow.module.css";
 import { useRouter } from "next/navigation";
 
 function OrderWindow() {
-  const price = 380; //price of the pizza in USD,
+  const price = 380;
 
   const [numInput, setNumInput] = useState("");
   const [nameInput, setNameInput] = useState("");
@@ -25,12 +25,12 @@ function OrderWindow() {
         name: nameInput,
         email: emailInput,
         phone: phoneInput,
-        amount: numInput,
+        message: numInput,
       };
       const queryString = new URLSearchParams(queryParams).toString();
       router.push(`/thanks?${queryString}`);
     } else {
-      alert("please fill all the fields");
+      alert("please fill all the required fields");
     }
   }
 
