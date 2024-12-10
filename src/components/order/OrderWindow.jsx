@@ -5,7 +5,7 @@ import styles from "./orderWindow.module.css";
 import { useRouter } from "next/navigation";
 
 function OrderWindow() {
-  const price = 380; //price of the pizza in USD,
+  const price = 1600;
 
   const [numInput, setNumInput] = useState("");
   const [nameInput, setNameInput] = useState("");

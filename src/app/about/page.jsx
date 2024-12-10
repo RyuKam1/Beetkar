@@ -51,6 +51,7 @@ function About() {
             alt="beetkari"
             fill={true}
             className={styles.img}
+            loading="eager"
           ></Image>
         </div>
       </div>
@@ -112,6 +113,7 @@ function About() {
                 alt="BeeIRFootage"
                 fill={true}
                 className={styles.img}
+                loading="eager"
               ></Image>
             </div>
           </div>
@@ -133,6 +135,7 @@ function About() {
                 alt="BeeCounter"
                 fill={true}
                 className={styles.img}
+                loading="eager"
               ></Image>
             </div>
           </div>
@@ -159,6 +162,7 @@ function About() {
                 alt="BeeSensors"
                 fill={true}
                 className={styles.img}
+                loading="eager"
               ></Image>
             </div>
           </div>
@@ -180,6 +184,7 @@ function About() {
                 alt="BeeTemperature"
                 fill={true}
                 className={styles.img}
+                loading="eager"
               ></Image>
             </div>
           </div>
@@ -195,6 +200,7 @@ function About() {
             alt="beetkari"
             fill={true}
             className={styles.img}
+            loading="eager"
           ></Image>
         </div>
         <div className={styles.membersContainer}>
@@ -206,6 +212,7 @@ function About() {
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
+                  loading="eager"
                 ></Image>
               </div>
               <div className={styles.nameContainer}>
@@ -227,6 +234,7 @@ function About() {
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
+                  loading="eager"
                 ></Image>
               </div>
               <div className={styles.nameContainer}>
@@ -247,6 +255,7 @@ function About() {
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
+                  loading="eager"
                 ></Image>
               </div>
               <div className={styles.nameContainer}>
@@ -268,6 +277,7 @@ function About() {
                   alt="beetkari"
                   fill={true}
                   className={styles.memberImg}
+                  loading="eager"
                 ></Image>
               </div>
               <div className={styles.nameContainer}>

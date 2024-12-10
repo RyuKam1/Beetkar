@@ -95,7 +95,7 @@ function Background() {
 
   if (init) {
     return (
-      <div>
+      <div className={styles.particlesContainer}>
         <Particles
           id="tsparticles"
           className={styles.background}

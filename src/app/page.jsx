@@ -43,6 +43,7 @@ export default function Home() {
           alt="me"
           fill={true}
           className={styles.img}
+          loading="eager"
         ></Image>
       </div>
       {showMe ? <OrderWindow /> : null}
