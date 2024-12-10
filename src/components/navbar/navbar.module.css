@@ -32,15 +32,18 @@
 
 .logoContainer {
   position: relative;
-  width: 200px;
+  width: 100px;
   height: 100px;
   cursor: pointer;
+  background-color: #ffd900; /*ffdf2b*/
+  border-radius: 15px;
 }
 
 .img {
   object-fit: contain;
   position: relative;
-  max-height: 90px;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1110px) {
